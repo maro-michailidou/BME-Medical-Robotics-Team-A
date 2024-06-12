@@ -1,3 +1,5 @@
+% Performs validation check for all four angles, ensuring they are inside
+% the valid ranges specified by [lb, ub] bounds
 function [valid_angles, angles_info] = check_valid_angles(angles)
     % Define lower and upper bounds for joint angles (in radians)
     lb = [-deg2rad(60), -deg2rad(55), -deg2rad(27.5), -deg2rad(31)]; % Lower bounds

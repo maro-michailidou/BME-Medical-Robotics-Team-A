@@ -1,3 +1,7 @@
+% Solves the inverse kinematics problem for given phalanges lengths, end
+% effector's (fingertip) position and orientation (x, y, z, total angle with respect to x-axis in x-z plane)
+% and returns to the GUI the 4 angles solutions, along with some additional
+% information about their validity check, calling internally check_valid_angles().
 function [theta_MCP_aa_sol, theta_MCP_fe_sol, theta_PIP_sol, theta_DIP_sol, angles_info] = GUI_inverse_kinematics(lengths, x, y, z, angle)
     L1 = lengths(1);
     L2 = lengths(2);

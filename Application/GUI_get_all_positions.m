@@ -1,3 +1,9 @@
+% Returns to the GUI the positions for all 3 joints (MCP, PIP, DIP) 
+% and for the end effector (fingertip), using a predetermined modified DH
+% parameters table and the general transformation matrix and given as
+% argument the lengths of the 3 phalanges and the angles that must be
+% calculated first during inverse kinematics solution. The GUI uses this
+% function to visualize explicitly each phalange in 3D plot.
 function [MCP_aa_fe_position, PIP_position, DIP_position, eff_position] = GUI_get_all_positions(lengths, angles)
     % Extract angles
     theta_MCP_aa = angles(1);
